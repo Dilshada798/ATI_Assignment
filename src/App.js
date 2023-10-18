@@ -4,6 +4,8 @@ import "./styles.css";
 
 function App() {
   const [selectedTag, setSelectedTag] = useState("");
+  
+  const tags = ["production", "warehouse", "others"]; // Define your tags here
 
   const changeTag = (tag) => {
     setSelectedTag(tag);
@@ -17,18 +19,15 @@ function App() {
     <div className="App">
       <h1>Plant Tags</h1>
       <div className="tags">
-        <button
-          className={`tag ${selectedTag === "production" ? "active" : ""}`}
-          onClick={() => changeTag("production")}
-        >
-          Production
-        </button>
-        <button
-          className={`tag ${selectedTag === "warehouse" ? "active" : ""}`}
-          onClick={() => changeTag("warehouse")}
-        >
-          Warehouse
-        </button>
+        {tags.map((tag) => (
+          <button
+            key={tag}
+            className={`tag ${selectedTag === tag ? "active" : ""}`}
+            onClick={() => changeTag(tag)}
+          >
+            {tag}
+          </button>
+        ))}
       </div>
       <div className="plants">
         {filteredPlants.map((plant, index) => (
