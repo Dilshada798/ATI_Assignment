@@ -1,0 +1,35 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.tags {
+  margin: 5px;
+}
+
+.tag {
+  padding: 8px 10px;
+  margin: 3px;
+  background-color: green;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.plants {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.plant-button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid black;
+  border-radius: 5px;
+}

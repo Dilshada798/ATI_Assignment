@@ -1,0 +1,8 @@
+[
+  { "plant_name": "plant 1", "tag": "production" },
+  { "plant_name": "plant 2", "tag": "production" },
+  { "plant_name": "plant 3", "tag": "production" },
+  { "plant_name": "plant 4", "tag": "warehouse" },
+  { "plant_name": "plant 5", "tag": "warehouse" },
+  { "plant_name": "plant 6", "tag": "warehouse" }
+]
